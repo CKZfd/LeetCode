@@ -64,4 +64,5 @@
             for index,num in enumerate(nums):
                 if hash_map.get(target-num) is not None:
                     return [hash_map.get(target-num), index]
-                hash_map[num] = index```
+                hash_map[num] = index
+        ```
