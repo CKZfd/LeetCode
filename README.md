@@ -58,8 +58,10 @@
         >为了为了避免多次遍历，只需在num1之前的位置查找一遍即可  
         >用字典模拟哈希求解：逐个将num-index对放入字典里，在放进去之前先判断字典里是否有num2=target-nums[i]  
         >也可以利用列表的方法求解  
-        hash_map={}
-        for index,num in enumerate(nums):
-            if hash_map.get(target-num) is not None:
-                return [hash_map.get(target-num), index]
-            hash_map[num] = index
+        ```Python
+        def twoSum(self, nums, target):
+            hash_map={}
+            for index,num in enumerate(nums):
+                if hash_map.get(target-num) is not None:
+                    return [hash_map.get(target-num), index]
+                hash_map[num] = index```
