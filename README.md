@@ -54,7 +54,7 @@
     - dict.get(key,default=None) 返回指定键的值，如果值不在字典中返回默认值。
     - dict.popitem() 返回并删除字典最后的一个键值对
 4. 案例
-    - [1、两数之和](https://leetcode-cn.com/problems/two-sum/)    [解题](/001_two_sum.py)
+    - [1、两数之和](https://leetcode-cn.com/problems/two-sum/)    [解题](/leetcode/001_two_sum.py)
         >为了为了避免多次遍历，只需在num1之前的位置查找一遍即可  
         >用字典模拟哈希求解：逐个将num-index对放入字典里，在放进去之前先判断字典里是否有num2=target-nums[i]  
         >也可以利用列表的方法求解  
